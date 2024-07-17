@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "69d1b3f8-0e33-4cff-abfe-be02ab7d8ba5",
+		"name": "python_rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30907683"
+	},
+	"item": [
+		{
+			"name": "add_scheme",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<equipments scheme=\"1\">\r\n\t<power_system name=\"S1\" next=\"T1\" previous=\"\">\r\n\t\t<skz>100</skz>\r\n\t\t<u>121</u>\r\n\t</power_system>\r\n\t<transformer name=\"T1\" next=\"W1\" previous=\"S1\">\r\n\t\t<ukz>10.5</ukz>\r\n\t\t<kt>11.524</kt>\r\n\t\t<s>125</s>\r\n\t\t<u>121</u>\r\n\t</transformer>\r\n\t<transmission_line name=\"W1\" next=\"\" previous=\"T1\">\r\n\t\t<length>10</length>\r\n\t\t<x0>0.4</x0>\r\n\t\t<conductors>1</conductors>\r\n\t</transmission_line>\r\n</equipments>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/scheme",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"scheme"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

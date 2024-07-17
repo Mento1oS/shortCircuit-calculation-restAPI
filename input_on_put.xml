@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<equipments>
+	<power_system name="S1" next="T1" previous="">
+		<skz>170</skz>
+		<u>230</u>
+	</power_system>
+	<transformer name="T1" next="W1" previous="S1">
+		<ukz>11</ukz>
+		<kt>21.904761</kt>
+		<s>80</s>
+		<u>230</u>
+	</transformer>
+	<transmission_line name="W1" next="W2" previous="T1">
+		<length>10</length>
+		<x0>0.4</x0>
+		<conductors>2</conductors>
+	</transmission_line>
+	<transmission_line name="W2" next="" previous="W1">
+		<length>30</length>
+		<x0>0.4</x0>
+		<conductors>1</conductors>
+	</transmission_line>
+</equipments>
